@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: #0B2434;
     padding: 20px;
@@ -36,6 +36,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 10px;
 }
 
 
