@@ -22,8 +22,8 @@ header {
 }
 
 header > h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: bold;
   color: #F9F4DA;
 }
 
@@ -61,6 +61,7 @@ section.game-status.farewell {
 
 section.game-status > p {
   margin: 5px;
+  text-align: center;
 }
 
 section.game-status > p.farewell-message {

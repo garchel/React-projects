@@ -40,8 +40,23 @@ export const languages = [
         color: "#F9F4DA",
     },
     {
-        name: "Assembly",
+        name: "Go",
+        backgroundColor: "#B9A368",
+        color: "#FFFFFF",
+    },
+    {
+        name: "Swift",
+        backgroundColor: "#F05138",
+        color: "#FFFFFF",
+    },
+    {
+        name: "Kotlin",
+        backgroundColor: "#7F52FF",
+        color: "#FFFFFF",
+    },
+    {
+        name: "C#",
         backgroundColor: "#2D519F",
         color: "#F9F4DA",
     },
-]
+];

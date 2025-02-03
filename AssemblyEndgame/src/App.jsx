@@ -9,26 +9,26 @@ import { use } from "react"
 export default function AssemblyEndgame() {
 
     // Static values
-    const alphabet = "abcdefghijklmnopqrstuvwxyz"
-    const maxGuesses = {easy: 12, medium: 8, hard: 5}
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
+    const maxGuesses = { easy: 12, medium: 8, hard: 5 };
 
     // State values
-    const [currentWord, setCurrentWord] = useState("")
-    const [guessedLetters, setGuessedLetters] = useState([])
-    const [difficulty, setDifficulty] = useState("medium")
-    const [isFirstLoad, setIsFirstLoad] = useState(true)
-    
+    const [currentWord, setCurrentWord] = useState("");
+    const [guessedLetters, setGuessedLetters] = useState([]);
+    const [difficulty, setDifficulty] = useState("medium");
+    const [isFirstLoad, setIsFirstLoad] = useState(true);
+    const [maxGuessesForDifficulty, setMaxGuessesForDifficulty] = useState(maxGuesses[difficulty]);
+
     // Derived values
-    
     const wrongGuessCount =
-    guessedLetters.filter(letter => !currentWord.includes(letter)).length
+    guessedLetters.filter(letter => !currentWord.includes(letter)).length;
     const isGameWon =
-    currentWord.split("").every(letter => guessedLetters.includes(letter))
-    const isGameLost = wrongGuessCount === maxGuesses[difficulty]
-    const isGameOver = isGameWon || isGameLost
-    const lastGuessedLetter = guessedLetters[guessedLetters.length - 1]
-    const isLastGuessIncorrect = lastGuessedLetter && !currentWord.includes(lastGuessedLetter)
-    
+    currentWord.split("").every(letter => guessedLetters.includes(letter));
+    const isGameLost = wrongGuessCount === maxGuessesForDifficulty;
+    const isGameOver = isGameWon || isGameLost;
+    const lastGuessedLetter = guessedLetters[guessedLetters.length - 1];
+    const isLastGuessIncorrect = lastGuessedLetter && !currentWord.includes(lastGuessedLetter);
+
     const [numGuessesLeft, setNumGuessesLeft] = useState(maxGuesses[difficulty] - wrongGuessCount)
     
     useEffect(() => {
@@ -44,8 +44,10 @@ export default function AssemblyEndgame() {
       }, [isFirstLoad]);
 
     useEffect(() => {
-        
-    }, [currentWord])
+    // Atualiza o valor de maxGuessesForDifficulty sempre que a dificuldade mudar
+    setMaxGuessesForDifficulty(maxGuesses[difficulty]);
+    }, [currentWord]); // Isso vai garantir que a mudança de dificuldade atualize o valor
+    
 
     function initializeGame() {
         setCurrentWord(getRandomWord());
@@ -68,19 +70,16 @@ export default function AssemblyEndgame() {
         setGuessedLetters([])
     }
 
-    const languageElements = languages.map((lang, index) => {
-        const isLanguageLost = index < wrongGuessCount
+    const languageElements = languages.slice(0, maxGuessesForDifficulty).map((lang, index) => {
+        const isLanguageLost = index < wrongGuessCount;
         const styles = {
             backgroundColor: lang.backgroundColor,
-            color: lang.color
-        }
+            color: lang.color,
+        };
         const className = clsx("chip", isLanguageLost && "lost")
+    
         return (
-            <span
-                className={className}
-                style={styles}
-                key={lang.name}
-            >
+            <span className={className} style={styles} key={lang.name}>
                 {lang.name}
             </span>
         )
@@ -148,7 +147,7 @@ export default function AssemblyEndgame() {
             return (
                 <>
                     <h2>Game over!</h2>
-                    <p>You lose! Better start learning Assembly 😭</p>
+                    <p>You lose! Better start learning <strong>Assembly!</strong> 😭</p>
                 </>
             )
         }
