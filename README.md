@@ -4,13 +4,13 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
 
 ## 📂 Estrutura do Repositório
 
-- [📁 Projeto 1: Chef Claude](#📁-projeto-1-chef-claude)
-- [📁 Projeto 2: Tenzies](#📁-projeto-2-tenzies)
-- [📁 Projeto 3: Assembly Endgame](#📁-projeto-3-assembly-endgame)
+- [📁 Projeto 1: Chef Claude](#projeto-1-chef-claude)
+- [📁 Projeto 2: Tenzies](#projeto-2-tenzies)
+- [📁 Projeto 3: Assembly Endgame](#projeto-3-assembly-endgame)
 
 <br>
 
-## 📁 Projeto 1: Chef Claude
+## Projeto 1: Chef Claude
 <details>
   <summary><strong>Descrição:</strong></summary>
 
@@ -47,7 +47,7 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
 </details>
 <br>
 
-## 📁 Projeto 2: Tenzies
+## Projeto 2: Tenzies
 <details>
   <summary><strong>Descrição:</strong></summary>
 
@@ -86,7 +86,7 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
 </details>
 <br>
 
-## 📁 Projeto 3: Assembly Endgame
+## Projeto 3: Assembly Endgame
 
 <details>
   <summary><strong>Descrição:</strong></summary>
