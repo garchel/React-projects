@@ -4,30 +4,124 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
 
 ## 📂 Estrutura do Repositório
 
-- [📁 Projeto 1: Nome do Projeto](#projeto-1-nome-do-projeto)
-- [📁 Projeto 2: Nome do Projeto](#projeto-2-nome-do-projeto)
-- [📁 Projeto 3: Nome do Projeto](#projeto-3-nome-do-projeto)
+- [📁 Projeto 1: Chef Claude](#projeto-1-nome-do-projeto)
+- [📁 Projeto 2: Tenzies](#projeto-2-nome-do-projeto)
+- [📁 Projeto 3: Assembly Endgame](#projeto-3-nome-do-projeto)
 
 ---
 
-## 📁 Projeto 1: Nome do Projeto
+## 📁 Projeto 1: Chef Claude
+<details>
+  <summary><strong>Descrição:</strong></summary>
 
-**Descrição:**  
-*Explique em poucas linhas o propósito do projeto. Exemplo:*  
-Este projeto é uma aplicação de gerenciamento de tarefas (To-Do List) que permite aos usuários criar, organizar e marcar tarefas como concluídas. O foco foi a implementação de **hooks** e gerenciamento de estado.
+  ChefClaude é uma aplicação frontend desenvolvida em React que permite aos usuários criar receitas personalizadas com base em ingredientes disponíveis. O projeto utiliza a API do Google Gemini para gerar receitas em tempo real, oferecendo sugestões culinárias tanto em inglês quanto em português. O foco principal foi a implementação de React Hooks (`useState` e `useEffect`) para gerenciamento de estado e a integração com APIs externas para obter dados dinâmicos.
+</details>
 
-**Destaques Técnicos:**  
-- Utilizei `useState` e `useEffect` para o gerenciamento de estado.  
-- Inclui funcionalidade de ordenação por prioridade e filtragem.  
-- Interface intuitiva e responsiva desenvolvida com Tailwind CSS.
+<details>
+  <summary><strong>Destaques Técnicos:</strong></summary>
 
-**Demonstração:**  
-[🔗 Link para a aplicação (se hospedada)](https://link-do-projeto.com)
+  - **Gerenciamento de Estado:** Utilização de `useState` para controlar a lista de ingredientes e a receita gerada, e `useEffect` para garantir a sincronização com a API.  
+  - **Integração com API:** Comunicação com a API do Google Gemini para gerar receitas personalizadas com base nos ingredientes fornecidos pelo usuário.  
+  - **Formulário Interativo:** Implementação de um formulário para adicionar ingredientes, com validação para evitar duplicações e feedback visual para o usuário.  
+  - **Markdown Dinâmico:** Renderização de receitas formatadas em markdown, permitindo uma exibição clara e organizada das instruções.  
+  - **Boas Práticas:** Código modular e reutilizável, com componentização clara e estilização encapsulada usando CSS Modules.  
+  - **Ferramentas Modernas:** Uso do Vite para desenvolvimento rápido e eficiente, garantindo uma experiência de desenvolvimento fluida.  
+</details>
 
-**Como executar localmente:**
-```bash
-git clone https://github.com/usuario/react-projects.git
-cd react-projects/projeto-1
-npm install
-npm start
-```
+<details>
+  <summary><strong>Funcionalidades Principais:</strong></summary>
+
+  - Adição e gerenciamento de ingredientes.  
+  - Geração de receitas personalizadas com base nos ingredientes fornecidos.  
+  - Exibição de receitas formatadas em markdown, com instruções em inglês e português.  
+  - Integração contínua com a API do Google Gemini para sugestões culinárias dinâmicas.  
+</details>
+
+<details>
+  <summary><strong>Aprendizados:</strong></summary>
+
+  - Aprimoramento no uso de React Hooks para gerenciamento de estado e efeitos colaterais.  
+  - Experiência prática em integração com APIs externas e manipulação de respostas assíncronas.  
+  - Aplicação de boas práticas de desenvolvimento, como componentização modular.  
+  - Utilização de ferramentas modernas como Vite para otimizar o fluxo de desenvolvimento.  
+</details>
+
+## 📁 Projeto 2: Tenzies
+<details>
+  <summary><strong>Descrição:</strong></summary>
+
+  Tenzies é um jogo de dados desenvolvido em React, onde o objetivo é rolar os dados até que todos mostrem o mesmo valor. O jogador pode "segurar" os dados que deseja manter entre as jogadas, enquanto os outros são rolados novamente. O projeto utiliza uma API de imagens (Unsplash) para gerar um plano de fundo dinâmico relacionado ao tema do jogo. O foco principal foi a implementação de **React Hooks** (`useState`, `useEffect`, `useRef`) para gerenciamento de estado e efeitos colaterais, além de boas práticas de acessibilidade.
+</details>
+
+<details>
+  <summary><strong>Destaques Técnicos:</strong></summary>
+
+  - **Gerenciamento de Estado:** Utilização de `useState` para controlar o estado dos dados e `useEffect` para sincronizar ações, como a verificação de vitória e a busca de imagens de fundo.  
+  - **Acessibilidade:** Implementação de atributos ARIA (`aria-pressed`, `aria-label`) e um leitor de tela (`aria-live="polite"`) para garantir que o jogo seja acessível a todos os usuários.  
+  - **Integração com API:** Comunicação com a API do Unsplash para buscar imagens aleatórias relacionadas ao tema do jogo, que são usadas como plano de fundo dinâmico.  
+  - **Efeitos Visuais:** Uso da biblioteca `react-confetti` para exibir uma animação de confete quando o jogador vence o jogo.  
+  - **Componentização:** Divisão do jogo em componentes reutilizáveis, como o componente `Die`, que representa um dado individual.  
+  - **Boas Práticas:** Código modular, limpo e organizado, com foco em semântica e reutilização.  
+</details>
+
+<details>
+  <summary><strong>Funcionalidades Principais:</strong></summary>
+
+  - Rolagem de dados com a possibilidade de "segurar" dados específicos entre as jogadas.  
+  - Verificação automática de vitória quando todos os dados mostram o mesmo valor.  
+  - Plano de fundo dinâmico gerado a partir de imagens relacionadas ao tema do jogo, obtidas da API do Unsplash.  
+  - Animação de confete e feedback visual ao vencer o jogo.  
+  - Botão que alterna entre "Roll" e "New Game" dependendo do estado do jogo.  
+</details>
+
+<details>
+  <summary><strong>Aprendizados:</strong></summary>
+
+  - Aprimoramento no uso de React Hooks (`useState`, `useEffect`, `useRef`) para gerenciamento de estado e efeitos colaterais.  
+  - Experiência prática em integração com APIs externas (Unsplash) para obter dados dinâmicos.  
+  - Aplicação de boas práticas de acessibilidade, como o uso de atributos ARIA e feedback para leitores de tela.  
+  - Utilização de bibliotecas externas (`react-confetti`) para adicionar efeitos visuais ao projeto.  
+  - Desenvolvimento de componentes reutilizáveis e modularização do código.  
+</details>
+
+
+## 📁 Projeto 3: Assembly Endgame
+
+<details>
+  <summary><strong>Descrição:</strong></summary>
+
+  **Assembly: Endgame** é um jogo de adivinhação de palavras desenvolvido em React, onde o objetivo é descobrir a palavra oculta antes que as tentativas se esgotem. O jogo tem um tema de programação, com referências a linguagens de programação e uma narrativa que envolve salvar o mundo da programação do temido **Assembly**. O projeto utiliza **React Hooks** (`useState`, `useEffect`) para gerenciamento de estado e efeitos colaterais, além de bibliotecas como `framer-motion` para animações e `react-confetti` para celebrar vitórias.
+</details>
+
+<details>
+  <summary><strong>Destaques Técnicos:</strong></summary>
+
+  - **Gerenciamento de Estado:** Uso de `useState` para controlar a palavra atual, as letras adivinhadas e o número de tentativas restantes, e `useEffect` para sincronizar ações como a inicialização do jogo e a atualização do estado.  
+  - **Acessibilidade:** Implementação de atributos ARIA (`aria-live`, `role="status"`) e feedback para leitores de tela, garantindo que o jogo seja acessível a todos os usuários.  
+  - **Animações:** Utilização da biblioteca `framer-motion` para animações suaves no título e na descrição do jogo.  
+  - **Efeitos Visuais:** Uso de `react-confetti` para exibir uma animação de confete ao vencer o jogo.  
+  - **Dificuldade Personalizável:** O jogador pode escolher entre três níveis de dificuldade (fácil, médio, difícil), que afetam o número máximo de tentativas permitidas.  
+  - **Componentização:** Divisão do jogo em componentes reutilizáveis e modularização do código para facilitar a manutenção e escalabilidade.  
+</details>
+
+<details>
+  <summary><strong>Funcionalidades Principais:</strong></summary>
+
+  - Adivinhação de letras para descobrir a palavra oculta.  
+  - Feedback visual e textual sobre letras corretas e incorretas.  
+  - Contagem de tentativas restantes e exibição de linguagens de programação "perdidas" conforme o jogador erra.  
+  - Animações de confete ao vencer o jogo e mensagens de despedida ao perder.  
+  - Seleção de dificuldade (fácil, médio, difícil) que ajusta o número máximo de tentativas.  
+  - Botão "New Game" para reiniciar o jogo com uma nova palavra.  
+</details>
+
+<details>
+  <summary><strong>Aprendizados:</strong></summary>
+
+  - Aprimoramento no uso de React Hooks (`useState`, `useEffect`) para gerenciamento de estado e efeitos colaterais.  
+  - Experiência prática em animações com a biblioteca `framer-motion`.  
+  - Aplicação de boas práticas de acessibilidade, como o uso de atributos ARIA e feedback para leitores de tela.  
+  - Desenvolvimento de lógica de jogo, incluindo verificação de vitória/derrota e gerenciamento de tentativas.  
+  - Utilização de bibliotecas externas (`react-confetti`) para adicionar efeitos visuais ao projeto.  
+  - Componentização e modularização do código para facilitar a manutenção e escalabilidade.  
+</details>
