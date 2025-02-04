@@ -4,11 +4,11 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
 
 ## 📂 Estrutura do Repositório
 
-- [📁 Projeto 1: Chef Claude](#projeto-1-chef-claude)
-- [📁 Projeto 2: Tenzies](#projeto-2-tenzies)
-- [📁 Projeto 3: Assembly Endgame](#projeto-3-assembly-endgame)
+- [📁 Projeto 1: Chef Claude](#📁-projeto-1-chef-claude)
+- [📁 Projeto 2: Tenzies](#📁-projeto-2-tenzies)
+- [📁 Projeto 3: Assembly Endgame](#📁-projeto-3-assembly-endgame)
 
----
+<br>
 
 ## 📁 Projeto 1: Chef Claude
 <details>
@@ -45,6 +45,7 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
   - Aplicação de boas práticas de desenvolvimento, como componentização modular.  
   - Utilização de ferramentas modernas como Vite para otimizar o fluxo de desenvolvimento.  
 </details>
+<br>
 
 ## 📁 Projeto 2: Tenzies
 <details>
@@ -83,7 +84,7 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
   - Utilização de bibliotecas externas (`react-confetti`) para adicionar efeitos visuais ao projeto.  
   - Desenvolvimento de componentes reutilizáveis e modularização do código.  
 </details>
-
+<br>
 
 ## 📁 Projeto 3: Assembly Endgame
 
