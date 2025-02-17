@@ -9,8 +9,8 @@ const GameBody = () => {
   // Armazena as mensagens da conversa
   const [messages, setMessages] = useState([
     {
-      sender: "IA",
-      text: "Já posso advinhar o seu seu personagem? (Digite 'Sim para começar)",
+      sender: "GEMINATOR",
+      text: "Já posso advinhar o seu seu personagem? (Digite 'Sim' para começar)",
     },
   ]);
 
@@ -37,7 +37,7 @@ const GameBody = () => {
     const requestBody = {
       contents: [
         ...messages.map((msg) => ({
-          role: msg.sender === "IA" ? "model" : "user",
+          role: msg.sender === "GEMINATOR" ? "model" : "user",
           parts: [{ text: msg.text }],
         })),
         { role: "user", parts: [{ text: userInput }] },
@@ -70,14 +70,14 @@ const GameBody = () => {
 
       setMessages((prevMessages) => [
         ...prevMessages,
-        { sender: "IA", text: aiResponse },
+        { sender: "GEMINATOR", text: aiResponse },
       ]);
     } catch (error) {
-      console.error("[sendMessageToAI] Erro ao conectar com a IA:", error);
+      console.error("[sendMessageToAI] Erro ao conectar com a GEMINATOR:", error);
       setMessages((prevMessages) => [
         ...prevMessages,
         {
-          sender: "IA",
+          sender: "GEMINATOR",
           text: "Houve um erro ao tentar me conectar. Tente novamente.",
         },
       ]);
@@ -91,7 +91,7 @@ const GameBody = () => {
 
       console.log("[handleUserResponse] Input do usuário:", userInput);
 
-      // Adiciona a mensagem e chama a IA
+      // Adiciona a mensagem e chama a GEMINATOR
       setMessages((prevMessages) => {
         const updatedMessages = [
           ...prevMessages,
@@ -112,26 +112,28 @@ const GameBody = () => {
   return (
     <main className="flex flex-col items-center justify-center h-[70vh] p-4">
       {!showChat ? (
-        <>
-          <p className="text-lg font-medium">
-            Pense em um personagem famoso e clique no botão para começar!
+        
+		<div className="w-full max-w-md bg-white p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
+          <p className="text-lg font-medium text-center">
+            Pense em um personagem famoso e clique no botão para começar a jogar!
           </p>
           <button
             onClick={() => setShowChat(true)}
-            className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700"
+            className="mt-5 px-5 py-2 bg-gray-800 text-white rounded-lg shadow-md hover:bg-blue-950 "
           >
             Começar
           </button>
-        </>
+		</div>
+        
       ) : (
-        <div className="w-full max-w-md bg-white p-4 rounded-lg shadow-lg">
-          <div className="h-64 overflow-y-auto border-b border-gray-300 mb-2 p-2">
+        <div className="h-5/6 w-full max-w-md bg-white p-7 rounded-lg shadow-lg">
+          <div className="h-6/7 overflow-y-auto border-b border-gray-300 mb-2 p-2">
             {messages.map((msg, index) => (
               <p key={index} className="pt-2">
                 <span
                   className={clsx({
-                    "text-blue-600": msg.sender === "IA",
-                    "text-green-600": msg.sender !== "IA",
+                    "text-blue-600": msg.sender === "GEMINATOR",
+                    "text-green-600": msg.sender !== "GEMINATOR",
                     "font-medium": true,
                   })}
                 >
@@ -145,7 +147,7 @@ const GameBody = () => {
 
           <input
             type="text"
-            className="w-full mt-2 p-2 border border-gray-300 rounded-lg"
+            className="h-1/8 w-full mt-2 p-2 border border-gray-300 rounded-lg"
             placeholder="Digite sua resposta..."
             onKeyDown={handleUserResponse}
           />
