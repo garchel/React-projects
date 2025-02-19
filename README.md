@@ -127,6 +127,7 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
   - Utilização de bibliotecas externas (`react-confetti`) para adicionar efeitos visuais ao projeto.  
   - Componentização e modularização do código para facilitar a manutenção e escalabilidade.  
 </details>
+<br>
 
 
 ## Projeto 4: Geminator
