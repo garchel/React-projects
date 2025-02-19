@@ -7,6 +7,7 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
 - [📁 Projeto 1: Chef Claude](#projeto-1-chef-claude)
 - [📁 Projeto 2: Tenzies](#projeto-2-tenzies)
 - [📁 Projeto 3: Assembly Endgame](#projeto-3-assembly-endgame)
+- [📁 Projeto 3: Geminator](#projeto-4-geminator)
 
 <br>
 
@@ -125,4 +126,50 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
   - Desenvolvimento de lógica de jogo, incluindo verificação de vitória/derrota e gerenciamento de tentativas.  
   - Utilização de bibliotecas externas (`react-confetti`) para adicionar efeitos visuais ao projeto.  
   - Componentização e modularização do código para facilitar a manutenção e escalabilidade.  
+</details>
+
+
+## Projeto 4: Geminator
+
+<details>
+  <summary><strong>Descrição:</strong></summary>
+
+  **Geminator** é um jogo de adivinhação inteligente desenvolvido em React que utiliza a API do Google Gemini para tentar descobrir qual personagem famoso o jogador está pensando. Inspirado no clássico Akinator, o projeto combina técnicas modernas de desenvolvimento web com inteligência artificial, implementando um sistema de proxy backend para proteção de credenciais. O jogo funciona através de um chat interativo onde o jogador responde às perguntas da IA até que ela consiga adivinhar o personagem correto. O projeto faz uso intensivo de React Hooks (`useState`, `useEffect`, `useCallback`, `useRef`) e integração com APIs externas.
+</details>
+
+<details>
+  <summary><strong>Destaques Técnicos:</strong></summary>
+
+  - **Integração com IA:** Conexão com a API do Google Gemini para geração dinâmica de perguntas  
+  - **Arquitetura Segura:** Implementação de proxy backend (Node.js/Express) para proteger chaves de API  
+  - **Gerenciamento de Estado:** Uso de hooks como `useState` para controle do chat e `useCallback` para otimização de funções  
+  - **Componentização:** Separação em componentes reutilizáveis (ChatInterface, ChatMessage)  
+  - **Acessibilidade:** Implementação de scroll automático e foco gerenciado para melhor UX  
+  - **Tratamento de Erros:** Sistema robusto de captura e exibição de erros de comunicação  
+  - **Estilização Avançada:** Uso da biblioteca `clsx` para condicionais de classes CSS  
+</details>
+
+<details>
+  <summary><strong>Funcionalidades Principais:</strong></summary>
+
+  - Início do jogo com tela de boas-vindas interativa  
+  - Chat em tempo real com formatação diferenciada para usuário e IA  
+  - Sistema de perguntas adaptativas geradas por inteligência artificial  
+  - Interface responsiva com scroll automático para novas mensagens  
+  - Feedback visual de carregamento durante requisições à API  
+  - Proteção de chaves sensíveis através de servidor proxy dedicado  
+  - Mensagens de erro contextualizadas para falhas de comunicação  
+</details>
+
+<details>
+  <summary><strong>Aprendizados:</strong></strong></summary>
+
+  - Integração prática com APIs de inteligência artificial (Gemini)  
+  - Implementação de padrões de segurança para proteção de credenciais  
+  - Otimização de performance com React Hooks (`useCallback`, `useRef`)  
+  - Desenvolvimento full-stack com separação clara entre frontend e backend  
+  - Técnicas avançadas de manipulação de formulários em React  
+  - Gerenciamento de estado complexo em aplicações conversacionais  
+  - Implementação de padrões de UX para interfaces de chat  
+  - Configuração de ambiente com variáveis de ambiente e scripts combinados  
 </details>
