@@ -7,7 +7,7 @@ Bem-vindo ao meu repositório de projetos em React! Aqui, você encontrará uma 
 - [📁 Projeto 1: Chef Claude](#projeto-1-chef-claude)
 - [📁 Projeto 2: Tenzies](#projeto-2-tenzies)
 - [📁 Projeto 3: Assembly Endgame](#projeto-3-assembly-endgame)
-- [📁 Projeto 3: Geminator](#projeto-4-geminator)
+- [📁 Projeto 4: Geminator](#projeto-4-geminator)
 
 <br>
 
