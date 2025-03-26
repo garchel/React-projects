@@ -1,0 +1,12 @@
+# DICAS PARA O PROJETO DIÁRIO INTERATIVO DE VIAGENS NO TEMPO
+
+## COMPONENTES FUNCIONAIS
+- Mantenha seus componentes pequenos e focados em uma única responsabilidade.
+- Use desestruturação para acessar props: const { name, age } = props;
+- Prefira exportar componentes como default para facilitar a importação.
+
+## HOOKS - useState
+- O useState é assíncrono, então não confie no valor atualizado imediatamente após chamar a função setter.
+- Use a forma funcional do setter quando o novo estado depende do estado anterior:
+  ```jsx
+  setCount(prevCount => prevCount + 1);

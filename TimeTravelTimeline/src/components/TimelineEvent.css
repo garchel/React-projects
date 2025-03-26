@@ -1,0 +1,73 @@
+.timeline-event {
+  position: relative;
+  margin-left: 70px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-event.selected {
+  border-left: 4px solid #3498db;
+  background-color: #ecf0f1;
+}
+
+.event-marker {
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3498db;
+  border: 4px solid white;
+  box-shadow: 0 0 0 2px #3498db;
+}
+
+.event-content h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.event-category {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #95a5a6;
+}
+
+/* Category colors */
+.timeline-event.historical .event-category {
+  background-color: #3498db;
+}
+
+.timeline-event.scientific .event-category {
+  background-color: #2ecc71;
+}
+
+.timeline-event.cultural .event-category {
+  background-color: #9b59b6;
+}
+
+.timeline-event.political .event-category {
+  background-color: #e74c3c;
+}
+
+.timeline-event.technological .event-category {
+  background-color: #f39c12;
+}
+
+.timeline-event.fictional .event-category {
+  background-color: #1abc9c;
+}

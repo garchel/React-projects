@@ -1,0 +1,99 @@
+
+```txt:c%3A%5CProjects%5Ctime-travel-diary%5CSTEP_BY_STEP.txt
+# GUIA PASSO A PASSO: DIÁRIO INTERATIVO DE VIAGENS NO TEMPO
+
+## 1. CONFIGURAÇÃO DO PROJETO
+
+1. Crie um novo projeto React usando Vite:
+
+2. Organize a estrutura de pastas:
+- src/
+  - components/
+  - services/
+  - hooks/
+  - contexts/
+  - assets/
+
+## 2. IMPLEMENTAÇÃO DOS COMPONENTES BÁSICOS
+
+1. Crie o componente principal App.jsx
+- Configure a estrutura básica com Header e conteúdo principal
+- Implemente o estado para controlar a visualização ativa
+
+2. Crie o componente Header.jsx
+- Adicione o título e botões de navegação
+- Implemente a lógica para alternar entre visualizações
+
+3. Crie os componentes TimelineView.jsx e EventCreator.jsx
+- Configure a estrutura básica de cada componente
+
+
+## 3. IMPLEMENTAÇÃO DO SERVIÇO DE DADOS
+
+1. Crie o arquivo timelineService.js
+- Adicione dados mockados para eventos da linha do tempo
+- Implemente funções para simular chamadas de API
+
+
+
+## 4. IMPLEMENTAÇÃO DA VISUALIZAÇÃO DA LINHA DO TEMPO
+
+1. No TimelineView.jsx:
+- Adicione estado para armazenar eventos e evento selecionado
+- Implemente useEffect para buscar eventos
+- Adicione renderização condicional para estados de carregamento
+
+2. Crie o componente TimelineEvent.jsx
+- Implemente a renderização de um único evento
+- Adicione manipuladores de eventos para seleção
+
+## 5. IMPLEMENTAÇÃO DO PAINEL DE FILTROS
+
+1. No FilterPanel.jsx:
+- Adicione estado para armazenar filtros
+- Implemente manipuladores de eventos para alterações nos filtros
+- Conecte os filtros à visualização da linha do tempo
+
+## 6. IMPLEMENTAÇÃO DO CRIADOR DE EVENTOS
+
+1. No EventCreator.jsx:
+- Adicione estado para o formulário
+- Implemente manipuladores de eventos para alterações nos campos
+- Adicione validação de formulário
+- Implemente a lógica para adicionar um novo evento
+
+## 7. ESTILIZAÇÃO DOS COMPONENTES
+
+1. Crie arquivos CSS para cada componente
+- Adicione estilos básicos para layout e aparência
+- Implemente estilos para diferentes categorias de eventos
+- Adicione estilos responsivos
+
+## 8. IMPLEMENTAÇÃO DE ANIMAÇÕES E TRANSIÇÕES
+
+1. Crie um hook personalizado para transições
+- Implemente lógica para animar transições entre períodos
+
+2. Adicione classes CSS para animações
+- Implemente transições suaves entre estados
+
+## 9. TESTES E DEPURAÇÃO
+
+1. Execute os testes para verificar a funcionalidade
+- Verifique se todos os componentes estão funcionando corretamente
+- Teste a renderização condicional e o mapeamento de listas
+
+2. Depure quaisquer problemas
+- Verifique o console para erros
+- Ajuste o código conforme necessário
+
+## 10. OTIMIZAÇÃO E REFINAMENTO
+
+1. Refatore o código para melhorar a performance
+- Use React.memo para componentes que não mudam frequentemente
+- Otimize renderizações com useMemo e useCallback
+
+2. Adicione funcionalidades extras (opcional)
+- Implemente persistência local com localStorage
+- Adicione mais categorias e filtros
+- Melhore a experiência do usuário com feedback visual
