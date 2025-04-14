@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/React-projects/docs/Tenzies/',
+  base: '/React-projects/Tenzies/',
   plugins: [react()],
 })
